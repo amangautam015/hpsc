@@ -40,7 +40,7 @@ Trapezoidal method for given function is pretty fast and it was difficult to obs
 Code : [montecarlo.cpp](https://github.com/amangautam015/hpsc/blob/master/montecarlo.cpp "trapezoidal")  :link:
 
 
-As number of steps are increased error in final result is reduced . But in contrast with Trapezoidal rul error is much higher 
+As number of steps are increased error in final result is reduced . But in contrast with Trapezoidal rule error is much higher 
 
 A graph showing error Vs log(number of steps) is show below . <br>
 
