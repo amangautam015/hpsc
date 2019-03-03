@@ -42,10 +42,10 @@ int main()
 	double xn = 3.14159;
 
 	// Number of grids. 
-	int n = 100000;
+	int n = 1000000;
 	int nthreads= 8;
 	omp_set_num_threads(nthreads);
-	printf("Value of integral is %6.4f\n",
-		trapezoidal(x0, xn, n,nthreads));
+	printf("Value of integral is %f\n",
+		(trapezoidal(x0, xn, n,nthreads)));
 	return 0;
 }

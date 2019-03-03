@@ -48,14 +48,18 @@ int main()
 	double xn = 3.14159;
     double x,y;
 	// Number of grids.
-	int n = 100000;
-	int nthreads= 6;
+	int n = 10000000;
+	int nthreads= 8;
 	omp_set_num_threads(nthreads);
-	double y0 = 0;
-	double yn = y0;
+	
 	double f = (xn-x0)/n;
 	// FInding maximum and minimum
-	#pragma omp parallel for schedule(dynamic,nthreads) 
+	double y0 = 0;
+	double yn = 1;
+	// Comment bock below can be used if  maximima and minima of functions are unknown for sin(x) bw [0,pi] max and min are [0,1] 
+	/*#pragma omp parallel for schedule(dynamic,nthreads) 
+	double y0 = 0;
+	double yn = y0;
 	for( int i = 0 ; i < n ; i++ ) {
 			x = x0 + f*i;
 			y = value_at(x);
@@ -65,11 +69,11 @@ int main()
 			if(y > yn){
 				yn = y;
 			}
-	}
+	} */
 
 	double rectArea = (xn-x0)*(yn-y0);
-	printf("Value of integral is %6.4f\n",
-		montecarlo(x0,xn,y0,yn,n,nthreads,rectArea));
+	printf("Value of integral is %f\n",
+		(montecarlo(x0,xn,y0,yn,n,nthreads,rectArea)));
 	
 	return 0;
 }
