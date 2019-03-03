@@ -48,7 +48,7 @@ int main()
 	double xn = 3.14159;
     double x,y;
 	// Number of grids.
-	int n = 10000000;
+	int n = 1500;
 	int nthreads= 8;
 	omp_set_num_threads(nthreads);
 	
