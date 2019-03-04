@@ -69,5 +69,10 @@ Time taken is reduced as threads are increased however montecarlo method is not 
 
 ---
 
+`g++ filename.cpp -fopenmp -lm` <br>
+`time ./a.out`
+
+---
+
 ###### Aman Gautam
 ###### 150100087
