@@ -22,7 +22,7 @@ double trapezoidal(double a, double b, int n,int nthreads)
 
 	int i;
 	int myid ;
-	#pragma omp parallel for schedule(dynamic,nthreads)  default(none) shared(n,i,a,h,nthreads)  reduction(+:s)
+	#pragma omp parallel for schedule(dynamic,nthreads)  default(none) private(i) shared(n,a,h,nthreads)  reduction(+:s)
 	for (i = 0; i < n; i++) {
 		//myid = omp_get_thread_num();
 
@@ -43,9 +43,9 @@ int main()
 
 	// Number of grids. 
 	int n = 1500;
-	int nthreads= 8;
+	int nthreads= 6;
 	omp_set_num_threads(nthreads);
 	printf("Value of integral is %f\n",
-		(2-trapezoidal(x0, xn, n,nthreads)));
+		(trapezoidal(x0, xn, n,nthreads)));
 	return 0;
 }

@@ -16,7 +16,7 @@ double montecarlo(double x0, double xn, double y0, double yn ,int n,int nthreads
 	double s = 0; // factor
     double x,y;
 	int i;
-	#pragma omp parallel for schedule(dynamic,nthreads)  default(none) shared(n,i,x,y,x0,y0,yn,xn,nthreads)  reduction(+:s)
+	#pragma omp parallel for schedule(dynamic,nthreads)  default(none) private(i) shared(n,x,y,x0,y0,yn,xn,nthreads)  reduction(+:s)
 	for (i = 0; i < n; i++) {
 		//myid = omp_get_thread_num();
        
