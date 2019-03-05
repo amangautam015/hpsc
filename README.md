@@ -31,7 +31,7 @@ A graph showing error Vs log(number of steps) is show below . <br>
 
 <br>
 
-Trapezoidal method for given function is pretty fast and it was difficult to observe time reduction with increase in threads however on increasing number of threads to a appretiably large number we could see how increasing threads made programme faster
+Trapezoidal method for given function is pretty fast and it was difficult to observe time reduction with increase in threads however on increasing number of steps to a appretiably large number we could see how increasing threads made programme faster
 
 ---
 
