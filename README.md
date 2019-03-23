@@ -76,3 +76,84 @@ Time taken is reduced as threads are increased however montecarlo method is not 
 
 ###### Aman Gautam
 ###### 150100087
+
+---
+
+<br><br><br>
+
+## HPSC ASSIGNMENTS 2 (ME 766)
+Language used : C++ 
+Function to Integrate : `f(x) = sin(x)` 
+Limits: `[0,pi]`
+Analytical Value of Integral: **2.00** 
+Repository : [Source Files](https://github.com/amangautam015/hpsc "Src")
+
+### TRAPEZOIDAL RULE
+
+Code : [trapezoidal.cpp](https://github.com/amangautam015/hpsc/blob/master/Assignment_2/trap.cpp "trapezoidal")  :link:
+
+As number of steps are increased error in final result is reduced dramatically(_almost eponential_) it almost goes to zero at `N = 2000`
+
+A table showing error Vs log(number of steps) is show below . 
+
+**Trapezoidal Rule**
+|Total Steps (n) | Error |
+| ------------- | ------------- |
+| 10  | 0.0164  |
+| 100  | 0.00168   |
+| 1000  | 0.000002   |
+| 10000  | 0.0   |
+| 100000  | 0.0  |
+
+
+
+**Average Time Taken vs number of process**
+
+|NUmber of processes  | Average Time(Over 5 trys) |
+| ------------- | ------------- |
+| 2  | 0.280 sec  |
+| 4  | 0.295 sec  |
+| 6  | 0.108 sec  |
+| 8  | 0.123 sec  |
+
+
+---
+
+### MONTECARLO METHOD
+
+Code : [montecarlo.cpp](https://github.com/amangautam015/hpsc/blob/master/Assignment_2/mcr.cpp "montecarlo")  :link:
+
+
+
+A table showing error Vs log(number of steps) is show below . 
+
+**Montecarlo Method**
+
+|Total Steps (n) | Error |
+| ------------- | ------------- |
+| 10  | 0.827 |
+| 100  | 0.167  |
+| 1000  | 0.037   |
+| 10000  | 0.02   |
+| 100000  | 0.002  |
+
+**Average Time Taken vs number of threads**
+
+|Threads  | Average Time(Over 5 trys) |
+| ------------- | ------------- |
+| 2  | 0.314 sec  |
+| 4  | 0.306 sec  |
+| 6  | 0.114 sec  |
+| 8  | 0.132 sec  |
+
+
+> My ALgorithm for **montecarlo** do not preserve **reproducibility** because it takes out a **random number every time it loops** which results in slightly different results .  
+
+\
+
+---
+
+
+###### Aman Gautam
+###### 150100087
+
