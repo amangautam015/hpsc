@@ -37,7 +37,7 @@ Trapezoidal method for given function is pretty fast and it was difficult to obs
 
 ## MONTECARLO METHOD
 
-Code : [montecarlo.cpp](https://github.com/amangautam015/hpsc/blob/master/montecarlo.cpp "trapezoidal")  :link:
+Code : [montecarlo.cpp](https://github.com/amangautam015/hpsc/blob/master/montecarlo.cpp "montecarlo")  :link:
 
 
 As number of steps are increased error in final result is reduced . But in contrast with Trapezoidal rule error is much higher 
@@ -86,7 +86,7 @@ Language used : C++
 Function to Integrate : `f(x) = sin(x)` 
 Limits: `[0,pi]`
 Analytical Value of Integral: **2.00** 
-Repository : [Source Files](https://github.com/amangautam015/hpsc "Src")
+Repository : [Source Files](https://github.com/amangautam015/hpsc/tree/master/Assignment_2 "Src")
 
 ### TRAPEZOIDAL RULE
 
