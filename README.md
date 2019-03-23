@@ -82,22 +82,23 @@ Time taken is reduced as threads are increased however montecarlo method is not 
 <br><br><br>
 
 ## HPSC ASSIGNMENTS 2 (ME 766)
-Language used : C++ 
-Function to Integrate : `f(x) = sin(x)` 
-Limits: `[0,pi]`
-Analytical Value of Integral: **2.00** 
-Repository : [Source Files](https://github.com/amangautam015/hpsc/tree/master/Assignment_2 "Src")
+
+Language used : C++ <br> 
+Function to Integrate : `f(x) = sin(x)` <br>
+Limits: `[0,pi]` <br>
+Analytical Value of Integral: **2.00**  <br>
+Repository : [Source Files](https://github.com/amangautam015/hpsc/tree/master/Assignment_2 "Src") <br>
 
 ### TRAPEZOIDAL RULE
 
 Code : [trapezoidal.cpp](https://github.com/amangautam015/hpsc/blob/master/Assignment_2/trap.cpp "trapezoidal")  :link:
 
-As number of steps are increased error in final result is reduced dramatically(_almost eponential_) it almost goes to zero at `N = 2000`
-
 A table showing error Vs log(number of steps) is show below . 
 
 **Trapezoidal Rule**
-|Total Steps (n) | Error |
+ 
+ 
+|Total Steps  | Error |
 | ------------- | ------------- |
 | 10  | 0.0164  |
 | 100  | 0.00168   |
